@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function getMyLocation(){
+            navigator.geolocation.getCurrentPosition(locationSuccess, locationFail);
+        }
+        function locationFail(){
+            alert("Oops, couldn't find you!");
+        }
+        function locationSuccess(position){
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.longitude;
+            document.getElementById("result").innerHTML = "location in latitude amd longitude is " + latitude + " and " + longitude;
+        }
+    </script>
+</head>
+<body>
+    <button onclick = "getMyLocation()">Press to find your location</button>
+    <div id = "result"></div>
+</body>
+</html>

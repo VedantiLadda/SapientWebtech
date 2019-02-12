@@ -1,0 +1,17 @@
+.main-layout{
+    background-color: #e1efef;
+    margin: 0px 0px 0px 0px;
+}
+.navbar{
+    background-color: #54a1ce;
+    width: 100%;
+    height: 50px;
+}
+
+#firstname{
+    
+}
+
+label{
+    font-size: smaller;
+}
