@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Forms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <form>
+        <!--name attribute must be present in every html element, should be unique except for radio buttons, use camel casing-->
+        <input type="text" name="firstName" placeholder="first name" required>
+        <br/>
+        <input type="password" name="password" placeholder="password" required minlength="4" maxlength="10">
+        <br/>
+        <!--html5 based features, doesn't work in IE as of now, 2019-->
+        <input type="datetime-local" name="dob" placeholder="date of birth">
+        <br/>
+        <input type="file" name="myProfile">
+        <br/>
+        <input type="color" name="chooseColor" value="#aaffbb">
+        <br/>
+        <input type="range" name="rangeSlider" min="0" max="10" step="2">
+        <br/>
+        <input type="number" name="numberBox" min="100" max="800" step="100">
+        <br/>
+        <input type="email" name="email" placeholder="email">
+        <br/>
+        <input type="tel" name = "tel" placeholder="telephone number" pattern = "^([0-9])+$">
+        <br/>
+        <input type="submit">
+        
+    </form>
+    
+</body>
+</html>
