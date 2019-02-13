@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Media Query</title>
+    <style>
+        #container {
+            border: 3px solid red;
+            overflow: auto;
+        }
+
+        @media screen and (min-width:600px) {
+            nav {
+                border: 3px solid green;
+                float: left;
+                width: 25%;
+            }
+
+            section {
+                border: 3px solid yellow;
+                margin-left: 26%;
+            }
+        }
+
+        @media screen and (max-width:680px) {
+            nav li {
+                display: inline;
+            }
+
+            nav {
+                border: 3px solid pink;
+            }
+
+            section {
+                border: 3px solid gray;
+            }
+        }
+        /*==================================================
+        * Effect 2
+        * ===============================================*/
+
+        .effect2 {
+            position: relative;
+        }
+
+        .effect2:before,
+        .effect2:after {
+            z-index: -1;
+            position: absolute;
+            content: "";
+            bottom: 15px;
+            left: 10px;
+            width: 50%;
+            top: 80%;
+            max-width: 300px;
+            background: #777;
+            -webkit-box-shadow: 0 15px 10px #777;
+            -moz-box-shadow: 0 15px 10px #777;
+            box-shadow: 0 15px 10px #777;
+            -webkit-transform: rotate(-3deg);
+            -moz-transform: rotate(-3deg);
+            -o-transform: rotate(-3deg);
+            -ms-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+        }
+
+        .effect2:after {
+            -webkit-transform: rotate(3deg);
+            -moz-transform: rotate(3deg);
+            -o-transform: rotate(3deg);
+            -ms-transform: rotate(3deg);
+            transform: rotate(3deg);
+            right: 10px;
+            left: auto;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+            </ul>
+        </nav>
+        <section>This is a section</section>
+        <section>This is a section</section>
+        <section>This is a section</section>
+    </div>
+    <div class="box effect2">
+            <h3>Effect 2</h3>
+    </div>
+</body>
+</html>

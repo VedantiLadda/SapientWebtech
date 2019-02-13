@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Box Shadow Effects</title>
+    <style>
+        body {
+            background: #d3c7e9;
+        }
+
+        h3{
+            color: whitesmoke;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 30px;
+            text-transform: full-width;
+        }
+
+        .box h3 {
+            text-align: center;
+            position: relative;
+            top: 80px;
+        }
+
+        .box {
+            width: 70%;
+            height: 200px;
+            background:linear-gradient(lightblue, pink);
+            margin: 40px auto;
+        }
+        /*==================================================
+        * Effect 7
+        * ===============================================*/
+
+        .effect7 {
+            position: relative;
+            -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        }
+
+        .effect7:before,
+        .effect7:after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            /* For different browsers */
+            -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+            -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+            top: 0;
+            bottom: 0;
+            left: 10px;
+            right: 10px;
+            -moz-border-radius: 100px / 10px;
+            border-radius: 100px / 10px;
+        }
+
+        .effect7:after {
+            right: 10px;
+            left: auto;
+            -webkit-transform: skew(8deg) rotate(3deg);
+            -moz-transform: skew(8deg) rotate(3deg);
+            -ms-transform: skew(8deg) rotate(3deg);
+            -o-transform: skew(8deg) rotate(3deg);
+            transform: skew(8deg) rotate(3deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box effect7">
+        <h3>Effect 7</h3>
+    </div>
+</body>
+</html>

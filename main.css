@@ -1,17 +1,23 @@
+/*class based selector*/
 .main-layout{
     background-color: #e1efef;
     margin: 0px 0px 0px 0px;
 }
+/* class based */
 .navbar{
     background-color: #54a1ce;
     width: 100%;
     height: 50px;
+    border: #7204F5 dotted;
+    padding: 5px;
 }
 
+/* id based */
 #firstname{
     
 }
 
+/* tag based */
 label{
     font-size: smaller;
 }

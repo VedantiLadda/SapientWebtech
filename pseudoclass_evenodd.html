@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pseudoclasses</title>
+    <style>
+        /* pseudo class */
+        /* p:nth-child(odd){
+            background-color:lightblue;
+            color:#262626;
+            margin: 0px;
+        }
+        p:nth-child(even){
+            background-color: lavender;
+            margin: 0px;
+        } */
+        [class*="t"]:hover{
+            color:red;
+            background-color: aqua;
+            height:100px;
+            width:100px;
+        }
+        /* Pseudo element */
+        p::first-letter{
+            text-transform: uppercase;
+        }
+
+        /* If p is an immediate child of p, this style is applied */
+        /* div > p{
+            background-color: yellow !important;
+        } */
+        
+        /* if p is just a child of div, immediate or not, this style will be applied */
+        /* div p{
+            background-color: yellow !important;
+        } */
+
+        /* if p is a sibling of div, this style will be applied to p */
+        div ~ p{
+            background-color: yellow !important;
+        }
+    </style>
+</head>
+<body>
+    <button class="test">Check</button>
+    <!-- <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello i am the 4th child</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <p>hello</p>
+    <div>hello</div>
+    <div>
+        <p>Immediate child</p>
+        <span><p>Non-immediate child</p></span>
+    </div> -->
+    <!-- All p elements after div tag are the siblings, not ones that come before -->
+    <p>hello</p>
+    <div>hello</div>
+    
+    
+    <p>hello</p>
+</body>
+</html>

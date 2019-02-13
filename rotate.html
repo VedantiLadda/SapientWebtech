@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rotate</title>
+    <style>
+        #element{
+            width:100px;
+            height:50px;
+            background-color: #C8252B;
+            border:2px solid grey;
+            margin:100px;
+            transform:rotate(0deg);
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function setTransform(element){
+            var rotateValue =  element.value;
+            document.getElementById("element").style.transform = rotateValue;
+        }
+    </script>
+    <div class='demo'>
+        <button id="element">I'm gonna rotate!</button></br>
+        <input type="radio" name="transform" value="rotate(50deg)"
+        onclick="setTransform(this)">Rotate 50 deg </br>
+        <input type="radio" name="transform" value="rotate(90deg)"
+        onclick="setTransform(this)">Rotate 90 deg </br>
+        <input type="radio" name="transform" value="rotate(120deg)"
+        onclick="setTransform(this)">Rotate 120 deg </br>
+    </div>
+</body>
+</html>
