@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>assignment1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+        .border{
+            border: 2px dotted black;
+            height: 450px;
+            width:96%;
+            box-shadow: 2px 2px transparent;
+        }
+        div{
+            box-shadow:4px 4px 2px 2px orange;
+            text-align: center;
+            vertical-align: middle;
+            
+            margin:23px;
+            width:  280px;
+            height: 50px;
+            border: 1px solid black;
+        }
+        .leftDiv > div:hover{
+            box-shadow:4px 4px 2px 2px turquoise;
+        }
+        
+        .rightDiv > div:hover{
+            box-shadow:4px 4px 2px 2px turquoise;
+        }
+        
+        .firstDiv{
+            text-align: center;
+            text-shadow: 2px 2px 5px red;
+            font-size:23px;
+            vertical-align: middle;
+            padding: 10px;
+            box-shadow: 2px 2px 2px 2px white;
+            height: 100px;
+            margin-left:40%;
+            border: 1px solid transparent;
+            transform: rotate(5deg);
+        }
+        .leftDiv{
+            float:left;
+            /* width:40%; */
+            /* margin-left:2%; */
+            box-shadow: 2px 2px white;
+            height: fit-content;
+            border: 1px solid white;
+        }
+        .rightDiv{
+            float:left;
+            /* width:40%; */
+            /* margin-right:5%; */
+            box-shadow: 2px 2px white;
+            height: fit-content;
+            border: 1px solid white;
+        }
+        .leftDiv > div:nth-child(odd){
+            height: 30px;
+            width: 250px;
+            transform: rotate(-5deg);
+            border: 1px solid black;
+            margin: 40px;
+            border-radius: 10px;
+        }
+        .leftDiv > div:nth-child(even){
+            height: 30px;
+            width: 250px;
+            transform: rotate(5deg);
+            border: 1px solid black;
+            margin: 40px;
+            border-radius: 10px;
+        }
+        .rightDiv > div:nth-child(odd){
+            height: 30px;
+            width: 250px;
+            transform: rotate(-5deg);
+            border: 1px solid black;
+            margin: 40px;
+            border-radius: 10px;
+        }
+        .rightDiv > div:nth-child(even){
+            height: 30px;
+            width: 250px;
+            transform: rotate(5deg);
+            border: 1px solid black;
+            margin: 40px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class = "firstDiv">
+        <div>News Clippings for today</div>
+    </div>
+    <div class="border">
+        <div class="leftDiv">
+            <div>
+                AcadGild Launches Front End Courses
+            </div>
+            <div>
+                AcadGild Launches CSS3 Courses
+            </div>
+            <div>
+                AcadGild Launches Angular Courses
+            </div>
+            <div>
+                AcadGild Launches CSS3 Courses
+            </div>
+            <div>
+                AcadGild Launches CSS Courses
+            </div>
+        </div>
+        <div class="leftDiv">
+                <div>
+                    AcadGild Launches Front End Courses
+                </div>
+                <div>
+                    AcadGild Launches CSS3 Courses
+                </div>
+                <div>
+                    AcadGild Launches Angular Courses
+                </div>
+                <div>
+                    AcadGild Launches CSS3 Courses
+                </div>
+                <div>
+                    AcadGild Launches CSS Courses
+                </div>
+            </div>
+        <div class="rightDiv">
+            <div>
+                AcadGild Launches Front End Courses
+            </div>
+            <div>
+                AcadGild Launches CSS3 Courses
+            </div>
+            <div>
+                AcadGild Launches Angular Courses
+            </div>
+            <div>
+                AcadGild Launches CSS3 Courses
+            </div>
+            <div>
+                AcadGild Launches CSS Courses
+            </div>
+        </div>
+        <div class="rightDiv">
+            <div>
+                AcadGild Launches Front End Courses
+            </div>
+            <div>
+                AcadGild Launches Android End Courses
+            </div>
+            <div>
+                AcadGild Launches Java Courses
+            </div>
+            <div>
+                AcadGild Launches UI Design Courses
+            </div>
+            <div>
+                AcadGild Launches Front End Courses
+            </div>
+        </div>
+    </div>
+</body>
+</html>
