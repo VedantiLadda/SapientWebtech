@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas width="600" height="400" id="c"></canvas>
+    <script>
+        // var canvas = document.getElementById('canvas');
+        // var c = canvas.getContext('2d');
+        // c.fillStyle="Blue";
+        // // c.fillRect(50,50,300,300);
+        // c.beginPath();
+        // c.moveTo(30,20);
+        // c.lineTo(200,50);
+        // c.lineTo(126,90);
+        // c.closePath();
+
+        // // c.strokeStyle='rgb(0,128,0)';
+        // // c.lineWidth=5;
+        // c.stroke();
+        // c.fill();
+
+        // c.fillStyle="black";
+        // c.font=" bold 24pt Arial";
+        // c.fillText("I miss the Childhood Days",20,150);
+        var c = document.getElementById('c');
+        var gl = c.getContext('webgl') || c.getContext("experimental-webgl");
+        gl.clearColor(0, 0, 0.8, 1);
+        gl.clear(gl.COLOR_BUFFER_BIT);
+        
+    </script>
+</body>
+
+</html>
