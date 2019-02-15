@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="modernizr.js"></script>
+    <style>
+        input{
+            padding:2px;
+            margin:10px;
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        window.onload = function(){
+            //getting more form and input elements
+            var form = document.forms[0],inputs=form.elements;
+            //if no autofocus, put the focus in the first field
+            if(!Modernizr.input.autofocus){
+                alert("Support Not enabled!");
+                inputs[0].focus();
+            }
+            else{
+                alert("support enabled");
+            }
+            //if required we will emulate it ourselves
+        };
+    </script>
+    <form method = "POST">
+        <input autofocus type="text" name="firstname"/>
+        <input type = "number" name="age"/>
+        <input type = "submit" name = "submit"/>
+    </form>
+</body>
+</html>

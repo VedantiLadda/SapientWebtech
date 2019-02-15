@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <canvas height="1000px" width = "1000px"id="canvas"></canvas>
+    <script>
+        var canvas = document.getElementById('canvas');
+        if(canvas.getContext){
+            var c = canvas.getContext('2d');
+            c.fillStyle="black";
+            c.moveTo(25,10);
+            c.lineTo(25,500);
+            c.stroke();
+            c.lineTo(725,500);
+            c.stroke();
+            c.fillStyle="blue";
+            var data=[16,68,20,30,54,22,49];
+            var months = ["Jan", "Feb", "March", "April", "May", "June", "July"];
+            for(var i=0;i<data.length;i++){
+                var dp=data[i];
+                c.fillRect(25+i*100,500-dp*5,50,dp*5);
+                c.fillStyle="black";
+                c.font=" bold 14pt Arial";
+                c.fillText(months[i],25+i*100,520);
+                c.fillStyle="blue";
+            }
+            
+        //     c.beginPath();
+        //     c.moveTo(10,0);
+        //     c.lineTo(10,200);
+        //     c.lineTo(100,200)
+        //    // c.moveTo(200,200);
+        
+         
+        //     c.stroke();
+          //  
+        }
+    </script>
+</body>
+</html>

@@ -9,10 +9,27 @@
 </head>
 
 <body>
-    <canvas width="600" height="400" id="c"></canvas>
+    <canvas id="canvas"></canvas>
     <script>
-        // var canvas = document.getElementById('canvas');
-        // var c = canvas.getContext('2d');
+        var canvas = document.getElementById('canvas');
+        if(canvas.getContext){
+            var c = canvas.getContext('2d');
+            //c.fillStyle="black";
+            c.beginPath();
+            c.arc(75,75,50,0,Math.PI*2,true);
+            c.moveTo(110,75);
+            c.arc(75,75,35,0,Math.PI,false);//Mouth
+            c.moveTo(65,65);
+            c.arc(60,65,5,0,Math.PI,true);//left eye
+            c.moveTo(95,65);
+            c.arc(90,65,5,0,Math.PI,true);//right eye
+            c.moveTo(79,85);
+            c.arc(76,85,3,0,Math.PI*2,true);//nose
+            //c.closePath();
+            c.stroke();
+           // c.fill();
+        }
+        
         // c.fillStyle="Blue";
         // // c.fillRect(50,50,300,300);
         // c.beginPath();
@@ -29,10 +46,7 @@
         // c.fillStyle="black";
         // c.font=" bold 24pt Arial";
         // c.fillText("I miss the Childhood Days",20,150);
-        var c = document.getElementById('c');
-        var gl = c.getContext('webgl') || c.getContext("experimental-webgl");
-        gl.clearColor(0, 0, 0.8, 1);
-        gl.clear(gl.COLOR_BUFFER_BIT);
+        
         
     </script>
 </body>
