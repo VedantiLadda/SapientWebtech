@@ -4,4 +4,6 @@ function returnObject(){
     console.log(elems);
 }
 
+// returnObject(); will return null, as document will not have loaded yet
+
 
