@@ -14,6 +14,10 @@
 //create a row, which means tr
 //create a column, which means td
 
+// map, filter, splice, slice, push, pop, forEach
+//map gives new array with additional properties to the item or reduced properties to the item
+//arrow functions: shorthand operators, doesn't create separate scope for the function, operates through callbacks
+
 (function () {
     'use strict'
     var students = [{ name: "Vedanti", age: "21" },
@@ -79,7 +83,7 @@
         }
     }
     createTable();
-    function deleteItem(){
-
-    }
+    var newArray = students.filter(function(a,index){
+        return a.age>30;
+    })
 })();
