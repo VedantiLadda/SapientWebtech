@@ -17,4 +17,4 @@ function Person(){
     var x=10;
     this.firstName="vedanti";
 }
-var student = new Person();
+var student = Person();
