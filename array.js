@@ -31,6 +31,7 @@
     }
     function getElement(elementID){
         return document.getElementById(elementID);
+        // document.querySelector('#id');
     }
     function createHeaderRow() {
         var headerRow = createElement('tr');

@@ -14,10 +14,8 @@
     var btn = getElement('button');
     var txt = getElement('text1');
     txt.addEventListener('keypress',function(e){
-        
         var reg = new RegExp(/^[A-Za-z]+$/);
         validateInput(e,reg);
-            
         console.log(e.key);
     });
     btn.addEventListener('click', function(e){

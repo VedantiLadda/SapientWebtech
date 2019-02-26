@@ -46,3 +46,12 @@ function registerUser(){
 //self-executing functions: anonymous, own context for execution, do not contain return keywords normally 
 //constructors in js: context of the function, how to use 'this' is decided at the time of calling the function, on the basis of who is calling the function
 //during hoisting, only the function definition is stored, no space saved for variables, or context decided.
+//files upload: content-type: multipart form data
+//document.querySelector: can perform all selectors' actions, can use CSS selectors too, regex, etc.
+//event bubbling: stop events from bubbling from child to parent with stopPropagation()
+//'true' property makes it bubble from top to bottom
+//ES6: Block level scope, iterators, promises, arrow operator, classes, modules, generators, maps, sets
+//scopes:global, local, lexical, block
+//no access modifiers in js
+//declare methods of the class without function keyword
+//default parameters
