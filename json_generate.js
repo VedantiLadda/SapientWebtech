@@ -270,14 +270,24 @@ var myData = [
       "favoriteFruit": "banana"
     }
   ];
-var mappedData = myData.map((x,i)=>{
-    return {userAge:x.age,userGender:x.gender,userName:x.name};
-}).filter((y,index)=>{
-    return y.userAge>30;
+var mappedData = myData.filter((y, index) => {
+  return y.userAge > 25;
+}).map((x, i) => {
+  return { age: x.age, userGender: x.gender, userName: x.name };
 });
 
-var mappedData = myData.map(x=>{
-    userAge:x.age;
-    userGender:x.gender;
-    userName:x.name;
-});
+console.log(mappedData);
+
+// // var mappedData = myData.map(x=>{
+// //     userAge:x.age;
+// //     userGender:x.gender;
+// //     userName:x.name;
+// // });
+
+// console.log(a);
+// var a ="hello";
+// great();
+// function great(){
+//   console.log('welcome');
+// }
+

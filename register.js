@@ -21,6 +21,8 @@ function registerUser(){
 //does not get polluted
 //Always recommended to start the first line of the immediate function with "use strict"
 //variables: declare them in line 2, no need to assign data, just declare as comma-separated variables
+//avoid callbakcs as much as possible, replace with arrow
+//read only variables: const, no assignment.
 
 //JS - no classes, only objects
 //How does Js work - from compiler design to syntax to memory allocation
@@ -55,3 +57,8 @@ function registerUser(){
 //no access modifiers in js
 //declare methods of the class without function keyword
 //default parameters
+
+//prototypes: not scope based, above scope at the Object base level.
+//callback hell
+//function chaining
+//closures
