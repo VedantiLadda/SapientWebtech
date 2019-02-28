@@ -22,7 +22,7 @@ function registerUser(){
 //Always recommended to start the first line of the immediate function with "use strict"
 //variables: declare them in line 2, no need to assign data, just declare as comma-separated variables
 //avoid callbakcs as much as possible, replace with arrow
-//read only variables: const, no assignment.
+//read only variables: const, no assignment (not in objects), used for string and variables
 
 //JS - no classes, only objects
 //How does Js work - from compiler design to syntax to memory allocation
@@ -62,3 +62,6 @@ function registerUser(){
 //callback hell
 //function chaining
 //closures
+
+//generators: special class of functions, can pause and resume iterations
+//produces sequence of results, generates series of values, lazy evaluation
