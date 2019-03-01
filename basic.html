@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
@@ -17,11 +17,23 @@
     
 </head>
 <body>
-    <button id="btnAddBook">Button</button>
-    <input type="text" id='txtName'>
-    <input type="text" id='txtAuthor'>
-    </br>
-    <p id="para">A function that returns an HTML string, DOM element(s), text node(s), or jQuery object to insert at the end of each element in the set of matched elements. Receives the index position of the element in the set and the old HTML value of the element as arguments. Within the function, this refers to the current element in the set.</p>
-    <script src = "jquery_example.js"></script>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">Select Country</div>
+            <div class="col-md-4">
+                <select class="form-control" id="ddlCountry">
+
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <input type="text" id="country" placeholder="country">
+            <input type="text" id="email" placeholder="email">
+            <input type="text" id="mobile" placeholder="mobile">
+            <input type="submit" id="submit">
+        </div>
+    </div>
+    <!-- <script src="jquery_example.js"></script> -->
+    <script src="post.js"></script>
 </body>
 </html>
