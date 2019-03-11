@@ -65,3 +65,29 @@ function registerUser(){
 
 //generators: special class of functions, can pause and resume iterations
 //produces sequence of results, generates series of values, lazy evaluation
+//module design pattern: all methods will be kept private, only certain methods will be exposed in the end to client
+
+//margin collapsing, cascading, borders, padding
+
+//prototypal inheritance: read-only properties
+//prototypal properties: don't have access to original object/class definition, want to add new properties
+//regular object properties: weh I do have access to source code
+
+//TDD precautions: -make sure code is not dependent on user interface
+//-make sure code follows the SRP (single responsibility principle, one function, one functionality)
+//-ensure that there is proper exception handling in your code, like runtime exceptions, compile time, etc.
+//-ensure your functions have return statements, and that they are testable
+//-integration testing, sit, is different from testing services separately
+
+//This ensures clearer, cleaner software architecture
+//You're forced to write understandable, maintainable code
+//Will consume more time to develop
+
+//unit testing ensures that a developer tests only their code, not dependent on other people's code
+//unit testing libraries: jasmine, mocha, jest
+//chai: assertion library
+//sinon.js: mock creation library
+
+//steps for creating unit tests: 1. all 3 have 'describe' function, to create the environment, group unit tests, actual unit testing happens inside the 'it' method
+//2. before each method: allows you to set the data or mock data or mock functions. 
+//3. these can be set before execution of every unit test

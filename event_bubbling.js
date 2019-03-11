@@ -21,3 +21,4 @@ window.addEventListener("contextmenu", function(e){
 //if the user is trying to enter more than 20 characters, bootstrap alert: max:20 characters, 5 sec. length
 //age<100, >18, alert message
 //red alert around textbox for validation
+//http 2002
