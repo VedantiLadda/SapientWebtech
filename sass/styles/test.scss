@@ -1,0 +1,25 @@
+$backgroundColor : red;
+.myClassGreen,
+ .myClass{
+    color:$backgroundColor;
+  }
+  $success:green;
+  $primary:blue;
+  
+  .btn-success{
+    background:$success;
+  }
+  
+  .btn-primary{
+    background:$primary;
+  }
+
+body #main .value {
+    background:#eee;
+    a.link{
+        color:#101010;
+        background: darkviolet;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 2em;
+    }
+}

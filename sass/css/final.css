@@ -1,0 +1,29 @@
+.myClassGreen,
+.myClass {
+  color: red; }
+
+.btn-success {
+  background: green; }
+
+.btn-primary {
+  background: blue; }
+
+body #main .value {
+  background: #eee; }
+  body #main .value a.link {
+    color: #101010;
+    background: darkviolet;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em; }
+
+.box {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
+
+.container {
+  width: 100%; }
+
+.col-50 {
+  width: 50%;
+  margin: 2%; }

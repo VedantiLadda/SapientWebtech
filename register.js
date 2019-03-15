@@ -91,3 +91,5 @@ function registerUser(){
 //steps for creating unit tests: 1. all 3 have 'describe' function, to create the environment, group unit tests, actual unit testing happens inside the 'it' method
 //2. before each method: allows you to set the data or mock data or mock functions. 
 //3. these can be set before execution of every unit test
+
+// where we refer to the required dependencies for the project: package.json

@@ -1,0 +1,22 @@
+
+$body-bg:rgb(206, 26, 53);
+$body-color:lightgray;
+$bg-secondary:violet;
+$bg-primary:lightblue;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.author-bio,
+.author-name {
+    @extend .row;
+}
+
+.author-nameLabel,
+.author-nameFirst,
+.author-nameLast {
+    @extend .col-md-4;
+}
+
+.author-bio p {
+    @extend .col-md-12;
+}

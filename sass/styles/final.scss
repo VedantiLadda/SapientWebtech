@@ -1,0 +1,22 @@
+@import "test.scss";
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+  }
+  
+  .box { @include transform(rotate(0deg)); }
+
+  .container{
+      width:100%;
+  }
+
+  @mixin gutter{
+    margin:2%;
+}
+  .col-50{
+      width:50%;
+      @include gutter;
+  }
+
+  
